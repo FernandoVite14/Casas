@@ -9,8 +9,10 @@ package Test;
  *
  * @author labtw10
  */
-public class PruebaFigura extends Rectangulo{
-    public PruebaFigura(){
-        String x=getColor();
+public class PruebaFigura extends TipoFigura.Rectangulo{
+    public String x;
+    @Override
+    public void Rectangulo(){
+        x= getColor();
     }
 }

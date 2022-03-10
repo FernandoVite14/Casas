@@ -5,6 +5,8 @@
  */
 package merge;
 
+import Test.PruebaFigura;
+
 /**
  *
  * @author labtw10
@@ -15,7 +17,9 @@ public class Merge {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        PruebaFigura p = new PruebaFigura();
+        p.Rectangulo();
+        System.out.println(p.x);
     }
     
 }
