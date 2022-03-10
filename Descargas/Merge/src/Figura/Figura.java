@@ -11,6 +11,6 @@ package Figura;
  */
 public abstract class Figura {
 
-    public abstract void Figura();
+    public abstract String getColor();
     
 }
