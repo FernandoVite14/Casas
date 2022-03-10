@@ -9,6 +9,9 @@ package TipoFigura;
  *
  * @author labtw10
  */
-public class Rectangulo {
-    
+public class Rectangulo extends Figura {
+    @Override 
+    public String getColor(){
+         return "Rojo";
+     }
 }
