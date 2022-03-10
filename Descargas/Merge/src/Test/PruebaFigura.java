@@ -9,6 +9,8 @@ package Test;
  *
  * @author labtw10
  */
-public class PruebaFigura {
-    
+public class PruebaFigura extends Rectangulo{
+    public PruebaFigura(){
+        String x=getColor();
+    }
 }
