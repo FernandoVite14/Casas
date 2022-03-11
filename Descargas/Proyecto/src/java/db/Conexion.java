@@ -8,6 +8,7 @@ package db;
 import java.sql.*;
 public class Conexion {
     private Connection connection;
+    private Statement st;
     private String url;
     private String user;
     private String pwd;
@@ -41,7 +42,7 @@ public class Conexion {
     
     public void getDesconnection(){
         try{
-            getConnection().close();
+            connection.close();
             System.out.println("Conexión a DB finalizada");
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -54,6 +55,24 @@ public class Conexion {
         con.getConnection();
         con.getDesconnection();
     }
-
+    
+    /*public Connection conectar()throws SQLException{
+        if (connection==null || connection.isClosed()) {
+            try{
+                
+            }catch(Class Not Found Exception e){
+                throw new SQLException(e);
+            }
+            connection=DriverManager.getConnection("jdbc:postgresql://"+url,user,pwd);
+        }
+            return connection;
+    }
+        
+    public void desconectar()throws SQLException{
+        if (connection!=null && !connection.isClosed()) {
+            connection.close();
+        }
+    }
+    */
     
 }
