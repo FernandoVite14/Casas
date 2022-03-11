@@ -18,6 +18,7 @@ public class Merge {
      */
     public static void main(String[] args) {
         PruebaFigura p = new PruebaFigura();
+        //Test.PruebaFigura p = new Test.PruebaFigura();
         p.Rectangulo();
         System.out.println(p.x);
     }
