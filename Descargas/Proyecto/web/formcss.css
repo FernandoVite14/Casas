@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 mar 2022, 8:38:25
+    Author     : labtw10
+*/
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    border: 1px solid red;
+    background-color: #9933CC;
+    color: #ffffff;
+    padding: 15px;
+}
+.li{
+    width:25%;
+    float:left;
+    padding: 15px;
+    border: 1px solid red;
+}
