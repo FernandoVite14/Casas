@@ -16,10 +16,10 @@ public class Main {
         Producto p2= new Producto("84535","Chokis","galletas con chocolate",14.0);
         Producto p3= new Producto("85396","Polvorones","Galletas sabor naranja",12.5);
         Producto p4= new Producto("74364","Gansito","pastelito de chocolate con mermelada de fresa",11.5);
-        Usuario u1 = new Usuario("43569","Juan","df8782","Juan","masculino",19);
-        Usuario u2 = new Usuario("47846","Pedro","sf7e86","Pedro","masculino",17);
-        Usuario u3 = new Usuario("48741","Luis","d8743s","Luis","masculino",18);
-        Usuario u4 = new Usuario("73438","José","df8864","José","masculino",21);
+        Usuario u1 = new Usuario("43569","Juan","df8782");
+        Usuario u2 = new Usuario("47846","Pedro","sf7e86");
+        Usuario u3 = new Usuario("48741","Luis","d8743s");
+        Usuario u4 = new Usuario("73438","José","df8864");
         
         List <Usuario> lista= new ArrayList<Usuario>();
         lista.add(u1);

@@ -6,29 +6,22 @@
  */
 package src.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuario extends Persona {
 
-    private String codigo, nombreUsuario, contraseña;
-
-    public Usuario(String codigo, String nombreUsuario, String contraseña, String nombre, String sexo, int edad) {
-        super(nombre, sexo, edad);
+    private String codigo;
+    private String nombreUsuario;
+    private String contraseña;
+    
+    public Usuario(String codigo, String nombreUsuario, String contraseña) {
         this.codigo = codigo;
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
     }
 
-    
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public String getNombreUsuario() {
-        return nombreUsuario;
-    }
-
-    public String getContraseña() {
-        return contraseña;
+    public Usuario() {
     }
 
     public void setCodigo(String codigo) {
@@ -43,9 +36,17 @@ public class Usuario extends Persona {
         this.contraseña = contraseña;
     }
 
-    @Override
-    public void codigo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getCodigo() {
+        return codigo;
     }
+
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+    
 
 }

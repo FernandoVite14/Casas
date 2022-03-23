@@ -16,27 +16,34 @@ public class UsuarioServiceImpl implements IUsuarioService{
 IUsuarioModel modelo = new UsuarioModelImpl();
     @Override
     public void crearRegistro(Usuario usuario) {
-        
+        modelo.crearRegistro(usuario);
     }
 
     @Override
     public void actualizarRegistro(Usuario usuario) {
+        modelo.actualizarRegistro(usuario);
+    }
         
+    @Override
+    public void eliminarRegistro(int idUsuario) {
+       modelo.eliminarRegistro(String.valueOf(idUsuario));
     }
 
     @Override
     public List<Usuario> obtenerRegistros() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        return modelo.obtenerRegistros();
     }
+    
+    public Usuario obtenerRegistro(String codigo){
+        return (Usuario) modelo.obtenerRegistros();
+    }
+    //ya
 
     @Override
     public Usuario obtenerRegistro(int idUsuario) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    @Override
-    public void eliminarRegistro(int idUsuario) {
-        
-    }
+    
     
 }

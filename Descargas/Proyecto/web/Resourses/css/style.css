@@ -1,0 +1,17 @@
+/*
+<!--
+    Autor: Jesús Vite
+    Fecha Creación : 7 mar 2022, 10:21:22
+    Fecha Actualización:
+    Descripción:
+-->
+*/
+
+table tr:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}

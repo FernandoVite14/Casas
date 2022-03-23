@@ -9,9 +9,9 @@ import java.sql.*;
 public class Conexion {
     private Connection connection;
     private Statement st;
-    private String url;
-    private String user;
-    private String pwd;
+    private String url="localhost/casas";
+    private String user="postgres";
+    private String pwd="medinagris";
 
     public Conexion() {
     }
